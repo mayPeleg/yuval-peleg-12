@@ -11,13 +11,13 @@
 }
 
 img {
-    width: 200px;
+    width: 150px;
     box-shadow: 1px 1px 15px 3px #c1848f;
 }
 
 span {
     color : white;
-    font-size: 23px;
+    font-size: 20px;
     margin-top:16px;
 }
 
@@ -32,8 +32,8 @@ input {
 }
 
 .header {
-    margin: 30px 0px;
-    font-size: 33px;
+    margin: 30px 0px 9px 0px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -43,12 +43,11 @@ input {
 
 .place {
     font-size: 25px;
-    padding-top: 10px;
 }
 
 .title {
     font-size: 25px;
-    padding-top: 35px;
+    padding-top: 15px;
     font-weight: bold;
 }
 
@@ -67,12 +66,11 @@ input {
     justify-content: center;
 
     span {
-        margin-top: 10px;
+        margin-top: 7px;
     }
 }
 
 .arrive-container {
-    margin-top: 10px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -92,7 +90,7 @@ input {
     font-size: 20px;
     height: 40px;
     font-weight: bold;
-    color: black;
+    color: #403d3d;
 }
 
 .error-message {
@@ -112,7 +110,7 @@ input {
 
     span {
         color: white;;
-        font-size: 30px;
+        font-size: 25px;
         margin-top: 20px;
     }
 }
