@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 50px;
+    color: white;
+}
+
+img {
+    width: 200px;
+    box-shadow: 1px 1px 15px 3px #c1848f;
+}
+
+span {
+    color : white;
+    font-size: 23px;
+    margin-top:16px;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid #da8291;
+    width: 200px;
+    height: 25px;
+    margin-top: 5px;
+    text-align: end;
+    padding-right: 5px;
+}
+
+.header {
+    margin: 30px 0px;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.time {
+    font-size: 25px;
+}
+
+.place {
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.title {
+    font-size: 25px;
+    padding-top: 35px;
+    font-weight: bold;
+}
+
+.inputs-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: end;
+    padding-top: 3px;
+}
+
+.name-container {
+    display: flex;
+    flex-flow: column;
+    align-items: end;
+    justify-content: center;
+
+    span {
+        margin-top: 10px;
+    }
+}
+
+.arrive-container {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: end;
+
+    span {
+        margin: 10px 0px 5px 0px;
+    }
+}
+
+.send-button {
+    background-color: white;
+    border: 1px solid #da8291;
+    border-radius: 20px;
+    width: 180px;
+    margin-top: 50px;
+    font-size: 20px;
+    height: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+.error-message {
+    color: red;
+}
+
+.approval-description {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50%;
+    margin-top: 50%;
+    font-weight: bold;
+
+    span {
+        color: white;;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}

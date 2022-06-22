@@ -1,0 +1,5 @@
+<div class="option" *ngFor="let option of options">
+    <div class="dot" [ngClass]="{'chosen': checkChosen(option)}" (click)="clickOption(option)"></div>
+    <span class="option">{{option}}</span>
+</div>
+

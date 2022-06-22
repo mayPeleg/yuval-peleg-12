@@ -1,0 +1,52 @@
+<div class="container" *ngIf="!clickedSend">
+  <img src="../assets/yuval-face.jpeg"/>
+  <div class="header">
+    בת המצווה של יובל פלג
+  </div>
+  <div class="time">
+    07.07 19:00
+  </div>
+  <div class="place">
+    הדקלים 14, בנימינה
+  </div>
+  <div class="title">
+    אנא אשרו את הגעתכם
+  </div>
+  <div class="inputs-container" >
+    <div class="name-container">
+      <span>
+        שם מלא
+      </span>
+      <input #name (keyup)="getName(name.value)" placeholder="הכניסו את שמכם המלא" type="text" />
+    </div>
+    <div class="arrive-container">
+      <span>?מגיע/ה</span>
+      <radio-button-component [options]="options" (chosenOption)="getChosenOption($event)"></radio-button-component>
+    </div>
+  </div>
+  <div class="error-message">
+    {{errorMessage}}
+  </div>
+  <button class="send-button" (click)="sendData()">
+    :) שלח
+  </button>
+</div>
+<div class="approval-description" *ngIf="chosenOption === '!ברור' && clickedSend">
+<span>!איזה כיף שאתם מגיעים</span>
+<span>
+ניפגש ב - 09/07 
+<br/>
+בשעה 19:00</span>
+<span>,בכתובת הדקלים 14
+  <br/>
+  בנימינה-גבעת עדה</span>
+</div>
+<div class="approval-description" *ngIf="chosenOption === 'לצערי לא' && clickedSend">
+  <span>...איזה באסה שלא תוכלו לבוא</span>
+<span> ,אם משהו ישתנה 
+  <br/>
+  !נשמח שתגיעו</span>
+<span> ואם לא, אז ניפגש
+  <br/>
+     :) sweet sixteen ב </span>
+</div>

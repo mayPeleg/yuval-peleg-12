@@ -1,0 +1,26 @@
+.dot {
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border: 1px solid #5c383e;
+
+    &.chosen {
+        width: 14px;
+        height: 14px;
+        background: #5c383e;
+    }
+} 
+
+.option {
+    display: flex;
+    flex-flow: row-reverse;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-right: 5px;
+        font-size: 20px;
+    }
+}
